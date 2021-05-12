@@ -1,4 +1,4 @@
 services:
-  HeimrichHannot\TwigTemplatesBundle\FrontendFramework\Concrete\Bootstrap5Framework:
+  HeimrichHannot\TwigTemplatesBootstrap5Bundle\FrontendFramework\Bootstrap5Framework:
     tags: ['huh.contao_twig_templates.framework']
     autowire: true
