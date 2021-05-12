@@ -26,7 +26,7 @@ class Bootstrap5Framework implements FrontendFrameworkInterface
     protected $stringUtil;
 
     /**
-     * Bootstrap4Framework constructor.
+     * Bootstrap5Framework constructor.
      */
     public function __construct(AccordionUtil $accordionUtil, StringUtil $stringUtil)
     {
