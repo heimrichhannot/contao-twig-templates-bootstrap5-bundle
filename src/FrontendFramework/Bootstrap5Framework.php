@@ -10,11 +10,11 @@ namespace HeimrichHannot\TwigTemplatesBootstrap5Bundle\FrontendFramework;
 
 use HeimrichHannot\TwigTemplatesBundle\Event\BeforeRenderCallback;
 use HeimrichHannot\TwigTemplatesBundle\Event\PrepareTemplateCallback;
-use HeimrichHannot\TwigTemplatesBundle\FrontendFramework\AbstractFrontendFramework;
+use HeimrichHannot\TwigTemplatesBundle\FrontendFramework\FrontendFrameworkInterface;
 use HeimrichHannot\UtilsBundle\Accordion\AccordionUtil;
 use HeimrichHannot\UtilsBundle\String\StringUtil;
 
-class Bootstrap5Framework extends AbstractFrontendFramework
+class Bootstrap5Framework implements FrontendFrameworkInterface
 {
     /**
      * @var AccordionUtil
@@ -52,6 +52,11 @@ class Bootstrap5Framework extends AbstractFrontendFramework
     public function beforeRender(BeforeRenderCallback $callback): BeforeRenderCallback
     {
         return $callback;
+    }
+
+    public static function getLabel(): string
+    {
+        return 'huh.twig.templates.framework.'.static::getIdentifier();
     }
 
     protected function prepareAccordions(string &$templateName, array &$data)
