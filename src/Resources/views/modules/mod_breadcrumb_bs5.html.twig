@@ -1,0 +1,21 @@
+{% extends '@HeimrichHannotTwigTemplates/block/block_unsearchable.html.twig' %}
+
+{% block content %}
+    <nav aria-label="breadcrumb">
+        <ul class="breadcrumb" itemprop="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
+            {% for key, item in items %}
+                {% if item.isActive|default %}
+                    <li class="breadcrumb-item active last{{ item.class|default ? ' ' ~ item.class : '' }}">
+                        <a href="{{ item.href|default }}" title="{{ item.title|default }}" aria-current="page">{{ item.isRoot|default ? item.title : item.link }}</a>
+                    </li>
+                {% else %}
+                    <li class="breadcrumb-item{{ item.class|default ? ' ' ~ item.class : '' }}" itemscope itemtype="http://schema.org/ListItem"
+                        itemprop="itemListElement">
+                        <a href="{{ item.href|default }}" title="{{ item.title|default }}" itemprop="url"><span itemprop="name">{{ item.isRoot|default ? item.title : item.link }}</span></a>
+                        <meta itemprop="position" content="{{ (key + 1) }}">
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </nav>
+{% endblock %}
