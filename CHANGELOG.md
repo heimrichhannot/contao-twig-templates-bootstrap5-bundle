@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.1.3] - 2021-08-11
+
+- fixed label class
+
 ## [0.1.2] - 2021-08-04
 
 - added form templates
