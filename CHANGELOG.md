@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.1.4] - 2021-08-25
+
+- Fixed: added missing `|raw` filters for form inputs
+
 ## [0.1.3] - 2021-08-11
 
 - fixed label class
