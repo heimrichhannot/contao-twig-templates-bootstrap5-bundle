@@ -4,7 +4,7 @@
   "description": "Brings bootstrap 5 template to twig templates bundle",
   "license": "LGPL-3.0-or-later",
   "require": {
-    "php": "^7.2",
+    "php": "^7.2|^8.0",
     "contao/core-bundle": "^4.4",
     "heimrichhannot/contao-twig-templates-bundle": "^2.0",
     "heimrichhannot/contao-utils-bundle": "^2.101"

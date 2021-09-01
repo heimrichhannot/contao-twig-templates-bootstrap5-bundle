@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.1.5] - 2021-09-01
+
+- Added: php8 support
+
 ## [0.1.4] - 2021-08-25
 
 - Fixed: added missing `|raw` filters for form inputs
