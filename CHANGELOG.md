@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.7] - 2021-09-10
+
+- Changed: `nav_inline_bs5.html.twig`
+- Added: `nav_vertical_bs5.html.twig`
+
 ## [0.1.6] - 2021-09-01
 
 - Added: `nav_inline_bs5.html.twig`
