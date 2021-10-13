@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.9] - 2021-10-13
+
+- Added: added `explanation` eval option to `form_textfield_bs5.html.twig`
+
 ## [0.1.8] - 2021-10-12
 
 - Fixed: added empty label and feeback block to `form_submit_bs5.html.twig`
