@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.10] - 2021-10-18
+
+- Added: pagination translation on aria-label
+- Changed: aria-label on pagination buttons
+
 ## [0.1.9] - 2021-10-13
 
 - Added: added `explanation` eval option to `form_textfield_bs5.html.twig`

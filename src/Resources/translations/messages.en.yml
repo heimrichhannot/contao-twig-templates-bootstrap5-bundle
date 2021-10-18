@@ -1,1 +1,5 @@
-huh.twig.templates.framework.bs5: "Bootstrap 5"
+huh:
+  twig:
+    templates:
+      framework:
+        bs5: "Bootstrap 5"

@@ -1,5 +1,5 @@
 <!-- indexer::stop -->
-<nav class="pagination-wrapper block" aria-label="Page navigation">
+<nav class="pagination-wrapper block" aria-label="{{ 'MSC.pagination'|trans({}, 'contao_default') }}">
     <p>{{ total }}</p>
 
     <ul class="pagination">
@@ -8,7 +8,7 @@
         {% endif %}
 
         {% if hasPrevious|default %}
-            <li class="page-item previous"><a role="button" href="{{ previous.href|raw }}" class="page-link previous" aria-label="{{ previous.title }}" title="{{ previous.title }}">{{ previous.link|raw }}</a>
+            <li class="page-item previous"><a role="button" href="{{ previous.href|raw }}" class="page-link previous" aria-label="{{ previous.link|raw }}, {{ previous.title }}" title="{{ previous.title }}">{{ previous.link|raw }}</a>
             </li>
         {% endif %}
 
@@ -21,11 +21,11 @@
         {% endfor %}
 
         {% if hasNext|default %}
-            <li class="page-item next"><a role="button" href="{{ next.href|raw }}" class="page-link next" aria-label="{{ next.title }}" title="{{ next.title }}">{{ next.link|raw }}</a></li>
+            <li class="page-item next"><a role="button" href="{{ next.href|raw }}" class="page-link next" aria-label="{{ next.link|raw }}, {{ next.title }}" title="{{ next.title }}">{{ next.link|raw }}</a></li>
         {% endif %}
 
         {% if hasLast|default %}
-            <li class="page-item last"><a role="button" href="{{ last.href|raw }}" class="page-link last" aria-label="{{ last.title }}" title="{{ last.title }}">{{ last.link|raw }}</a></li>
+            <li class="page-item last"><a role="button" href="{{ last.href|raw }}" class="page-link last" aria-label="{{ last.link|raw }}, {{ last.title }}" title="{{ last.title }}">{{ last.link|raw }}</a></li>
         {% endif %}
     </ul>
 </nav>
