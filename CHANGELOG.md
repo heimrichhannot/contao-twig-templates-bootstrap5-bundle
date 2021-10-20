@@ -2,6 +2,9 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.11] - 2021-10-20
+- Changed: removed input-group-prepend and input-group-append elements from form row template as they are not part of bootstrap 5
+
 ## [0.1.10] - 2021-10-18
 
 - Added: pagination translation on aria-label

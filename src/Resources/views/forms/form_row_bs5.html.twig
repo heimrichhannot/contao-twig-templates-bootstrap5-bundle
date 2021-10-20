@@ -47,13 +47,11 @@
 
         {% block inputPrepend %}
             {% if hasInputPrepend|default(false) %}
-                <div class="input-group-prepend">
-                    {% if arrConfiguration.inputPrepend|default() %}
-                        {{ arrConfiguration.inputPrepend|raw }}
-                    {% else %}
-                        {{ block('inputPrependInner')|raw }}
-                    {% endif %}
-                </div>
+                {% if arrConfiguration.inputPrepend|default() %}
+                    {{ arrConfiguration.inputPrepend|raw }}
+                {% else %}
+                    {{ block('inputPrependInner')|raw }}
+                {% endif %}
             {% endif %}
         {% endblock %}
 
@@ -62,13 +60,11 @@
 
         {% block inputAppend %}
             {% if hasInputAppend|default(false) %}
-                <div class="input-group-append">
-                    {% if arrConfiguration.inputAppend|default() %}
-                        {{ arrConfiguration.inputAppend|raw }}
-                    {% else %}
-                        {{ block('inputAppendInner')|raw }}
-                    {% endif %}
-                </div>
+                {% if arrConfiguration.inputAppend|default() %}
+                    {{ arrConfiguration.inputAppend|raw }}
+                {% else %}
+                    {{ block('inputAppendInner')|raw }}
+                {% endif %}
             {% endif %}
         {% endblock %}
 
