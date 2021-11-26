@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.12] - 2021-11-26
+
+- Added: `mod_search_bs5.html.twig`
+
 ## [0.1.11] - 2021-10-20
 - Changed: removed input-group-prepend and input-group-append elements from form row template as they are not part of bootstrap 5
 
