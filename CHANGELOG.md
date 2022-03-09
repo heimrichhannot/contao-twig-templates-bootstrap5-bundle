@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.13] - 2022-02-09
+
+- Fixed: added missing `|raw` filter to `form_wrapper_bs5.html.twig`
+
 ## [0.1.12] - 2021-11-26
 
 - Added: `mod_search_bs5.html.twig`
