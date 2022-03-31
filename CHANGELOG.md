@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.15] - 2022-03-31
+
+- Fixed: added missing `|raw` filter to `ce_downloads_bs5.html.twig`
+
 ## [0.1.14] - 2022-02-16
 
 - Fixed: missing `|raw` filter from 0.1.13
