@@ -7,7 +7,7 @@
         {% if method != 'get' %}
             <input type="hidden" name="FORM_SUBMIT" value="{{ formSubmit|default }}">
             <input type="hidden" name="REQUEST_TOKEN" value="{{ '{{request_token}}' }}">
-            {% if maxFileSize %}
+            {% if maxFileSize|default %}
                 <input type="hidden" name="MAX_FILE_SIZE" value="{{ maxFileSize|default }}">
             {% endif %}
         {% endif %}
