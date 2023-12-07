@@ -2,6 +2,9 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.16] - 2023-12-07
+- Fixed: checkbox compatibility with form generator
+
 ## [0.1.15] - 2022-03-31
 
 - Fixed: added missing `|raw` filter to `ce_downloads_bs5.html.twig`
