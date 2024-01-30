@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.17] - 2024-01-30
+- Changed: require at least php 7.4
+- Fixed: issue with nested accordions
+
 ## [0.1.16] - 2023-12-07
 - Fixed: checkbox compatibility with form generator
 

@@ -11,27 +11,18 @@ namespace HeimrichHannot\TwigTemplatesBootstrap5Bundle\FrontendFramework;
 use HeimrichHannot\TwigTemplatesBundle\Event\BeforeRenderCallback;
 use HeimrichHannot\TwigTemplatesBundle\Event\PrepareTemplateCallback;
 use HeimrichHannot\TwigTemplatesBundle\FrontendFramework\FrontendFrameworkInterface;
-use HeimrichHannot\UtilsBundle\Accordion\AccordionUtil;
-use HeimrichHannot\UtilsBundle\String\StringUtil;
+use HeimrichHannot\UtilsBundle\Util\Utils;
 
 class Bootstrap5Framework implements FrontendFrameworkInterface
 {
-    /**
-     * @var AccordionUtil
-     */
-    protected $accordionUtil;
-    /**
-     * @var StringUtil
-     */
-    protected $stringUtil;
+    private Utils $utils;
 
     /**
      * Bootstrap5Framework constructor.
      */
-    public function __construct(AccordionUtil $accordionUtil, StringUtil $stringUtil)
+    public function __construct(Utils $utils)
     {
-        $this->accordionUtil = $accordionUtil;
-        $this->stringUtil = $stringUtil;
+        $this->utils = $utils;
     }
 
     public static function getIdentifier(): string
@@ -61,11 +52,10 @@ class Bootstrap5Framework implements FrontendFrameworkInterface
 
     protected function prepareAccordions(string &$templateName, array &$data)
     {
-        if ($this->stringUtil->startsWith($templateName, 'ce_accordionSingle')) {
-            $this->accordionUtil->structureAccordionSingle($data);
-        } elseif ($this->stringUtil->startsWith($templateName, 'ce_accordionStart') ||
-            $this->stringUtil->startsWith($templateName, 'ce_accordionStop')) {
-            $this->accordionUtil->structureAccordionStartStop($data);
+        if (str_starts_with($templateName, 'ce_accordionSingle')) {
+            $this->utils->accordion()->structureAccordionSingle($data);
+        } elseif (str_starts_with($templateName, 'ce_accordionStart') || str_starts_with($templateName, 'ce_accordionStop')) {
+            $this->utils->accordion()->structureAccordionStartStop($data);
         }
     }
 }

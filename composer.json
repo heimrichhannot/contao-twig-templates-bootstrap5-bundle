@@ -4,21 +4,18 @@
   "description": "Brings bootstrap 5 template to twig templates bundle",
   "license": "LGPL-3.0-or-later",
   "require": {
-    "php": "^7.2|^8.0",
+    "php": "^7.4 || ^8.0",
     "contao/core-bundle": "^4.4",
     "heimrichhannot/contao-twig-templates-bundle": "^2.0",
-    "heimrichhannot/contao-utils-bundle": "^2.101"
+    "heimrichhannot/contao-utils-bundle": "^2.222",
+    "symfony/polyfill-php80": "^1.22"
   },
   "autoload": {
     "psr-4": {
       "HeimrichHannot\\TwigTemplatesBootstrap5Bundle\\": "src/"
     }
   },
-  "config": {
-    "preferred-install": "dist"
-  },
   "extra": {
-    "contao-manager-plugin": "HeimrichHannot\\TwigTemplatesBootstrap5Bundle\\ContaoManager\\Plugin",
-    "foxy": true
+    "contao-manager-plugin": "HeimrichHannot\\TwigTemplatesBootstrap5Bundle\\ContaoManager\\Plugin"
   }
 }
