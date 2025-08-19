@@ -1,7 +1,7 @@
 {% if accordion_first|default %}
     <div class="accordion" id="accordion_{{ accordion_parentId }}">
 {% endif %}
-123456
+ 
 <div class="{{ class }} ce_accordion accordion-item block"{{ cssID }}{{ style|default ? ' style="' ~ style ~ '"' }}>
     <h3 class="accordion-header mb-0" id="heading_{{ id }}">
         <button class="accordion-button  collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#collapse_{{ id }}"{% if accordion_first|default %} aria-expanded="true"{% else %}  aria-expanded="false"{% endif %} aria-controls="collapse_{{ id }}">
